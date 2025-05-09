@@ -1,0 +1,123 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+@import url('https://fonts.cdnfonts.com/css/gilroy-medium');
+@import url('https://fonts.cdnfonts.com/css/gilroy-light');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gilroy-Medium';
+    
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    /* background-color:crimson; */
+}
+#left-nav{
+    /* width: 100%; */
+    padding: 20px 30px;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#left-nav-right{
+    display: flex;
+    align-items:center;
+    /* color: green; */
+}
+#left-nav-right a{
+    margin-right: 20px;
+    text-decoration: none ;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+#left-nav-right svg{
+    color: black;
+}
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 200px;
+}
+#textcenter h1{
+    font-size: 80px;
+    font-weight: 900;
+}
+#textcenter p{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-size: 20px;
+    /* font-weight:lighter; */
+    color: gray;
+    /* line-height: 20px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}   
+#textcenter a{
+    text-decoration: none ;
+    color: black;
+    border-bottom: 2px solid black ;
+    padding-bottom: 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#right{ 
+    width: 60%;
+    height: 100%;
+    background-color: green;
+}
+#right-top{
+    width: 100%;
+    height: 50%;
+    background-color: yellow;
+    display: flex;
+}
+#right-bottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(./assets/right-bottom.avif);
+    background-size: cover;
+    background-position: center;
+    /* background-position: calc(center + 200px); */
+}
+#right-top-left{
+    width: 55%;
+    height: 100%;
+    background-image: url(./assets/right-top-left.avif);
+    background-size: cover;
+    background-position: center;
+}
+#right-top-right{
+    width: 45%;
+    height: 100%;
+    background-image: url(./assets/right-top-right.avif);
+    background-size: cover;
+    background-position:center;
+}
+
+@media(max-width: 600px){
+    #main{
+        flex-direction: column;
+    }
+    #left{
+        width: 100%;
+        height: 150%;
+    }
+    #right{
+        width: 100%;
+    }
+}
